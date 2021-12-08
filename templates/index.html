@@ -1,0 +1,247 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h1> The future
+                                of Vaccination</h1>
+                            <p> </p>
+                            <a href="/regmain" class="btn_2">Register</a>
+                            <div class="banner_item">
+                                <div class="single_item">
+                                    <img src="{{ url_for('static', filename = 'img/icon/banner_1.svg') }}" alt="">
+                                    <h5>Better Future</h5>
+                                </div>
+                                <div class="single_item">
+                                    <img src="{{ url_for('static', filename = 'img/icon/banner_2.svg') }}" alt="">
+                                    <h5>Timely <br>
+                                        Notifications</h5>
+                                </div>
+                                <div class="single_item">
+                                    <img src="{{ url_for('static', filename = 'img/icon/banner_3.svg') }}" alt="">
+                                    <h5>Avaliability of Vaccines</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+    <!-- feature_part start-->
+    <section class="feature_part padding_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 align-self-center">
+                    <div class="single_feature_text ">
+                        <h2>Our
+                            Services</h2>
+                        <p>Servies We Provide-</p>
+                        <a href="#" class="btn_2">More service</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="feature_item">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_feature">
+                                    <div class="single_feature_part">
+                                        <span class="single_feature_icon"><img src="{{ url_for('static', filename = 'img/icon/feature_1.svg') }}"
+                                                alt=""></span>
+                                        <h4>Time to Time <br>
+                                            Notifications</h4>
+                                        <p>We provide alert messages about the vaccination of your child.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_feature">
+                                    <div class="single_feature_part">
+                                        <span class="single_feature_icon"><img src="{{ url_for('static', filename = 'img/icon/feature_2.svg') }}"
+                                                alt=""></span>
+                                        <h4>Nation Immunisation Schedule</h4>
+                                        <p>We provide National Immunisation Schedule for all the vaccination.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_feature">
+                                    <div class="single_feature_part">
+                                        <span class="single_feature_icon"><img src="{{ url_for('static', filename = 'img/icon/feature_2.svg') }}"
+                                                alt=""></span>
+                                        <h4>Vaccination Guide</h4>
+                                        <p>We provide a proper Vaccination Guide for your child.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feature_part start-->
+
+    <!-- our_ability part start-->
+    <section class="our_ability section_padding">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 col-lg-6">
+                    <div class="our_ability_img">
+                        <img src="{{ url_for('static', filename = 'img/ability_img.png') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="our_ability_member_text">
+                        <h2>Our Patients
+                            Are at the Centre of
+                            Everything We Do</h2>
+                        <p>.</p>
+                        <ul>
+                            <li><span class="ti-mouse"></span>Modern Vaccines</li>
+                            <li><span class="ti-heart-broken"></span>Best Facilities</li>
+                            <li><span class="ti-package"></span>Experienced Nurse</li>
+                            <li><span class="ti-headphone-alt"></span>24 Hours Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our_ability part end-->
+
+    <!-- top_service part start-->
+    <section class="top_service our_ability padding_bottom">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-5 col-lg-5">
+                    <div class="our_ability_member_text">
+                        <h2>We Analyse Your Child
+                            Health States In Order
+                            To Top Service</h2>
+                        
+                        <a href="/vaccines" class="btn_2">Vaccines</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="our_ability_img">
+                        <img src="{{ url_for('static', filename = 'img/top_service.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- top_service part end-->
+
+    <!--::review_part start::-->
+    <section class="review_part">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="client_review_part owl-carousel">
+                        <div class="client_review_single">
+                            <img src="{{ url_for('static', filename = 'img/Quote.png') }}" class="Quote" alt="quote">
+                            <div class="client_review_text">
+                                <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
+                                    god dea earth light for life may itself shall whales made they're blessed whales
+                                    also made from give
+                                    may saying meat. There from heaven it lights face had amazing place</p>
+                            </div>
+                            <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
+                        </div>
+                        <div class="client_review_single">
+                            <img src="{{ url_for('static', filename = 'img/Quote.png') }}" class="Quote" alt="quote">
+                            <div class="client_review_text media-body">
+                                <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
+                                    god dea earth light for life may itself shall whales made they're blessed whales
+                                    also made from give
+                                    may saying meat. There from heaven it lights face had amazing place</p>
+                            </div>
+                            <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
+                        </div>
+                        <div class="client_review_single">
+                            <img src="{{ url_for('static', filename = 'img/Quote.png') }}" class="Quote" alt="quote">
+                            <div class="client_review_text">
+                                <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
+                                    god dea earth light for life may itself shall whales made they're blessed whales
+                                    also made from give
+                                    may saying meat. There from heaven it lights face had amazing place</p>
+                            </div>
+                            <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
+                        </div>
+                        <div class="client_review_single">
+                            <img src="{{ url_for('static', filename = 'img/Quote.png') }}" class="Quote" alt="quote">
+                            <div class="client_review_text">
+                                <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
+                                    god dea earth light for life may itself shall whales made they're blessed whales
+                                    also made from give
+                                    may saying meat. There from heaven it lights face had amazing place</p>
+                            </div>
+                            <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::review_part end::-->
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part padding_bottom">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-lg-7 col-md-6">
+                    <div class="regervation_part_iner">
+                        <form>
+                            <h2>Child Info</h2>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="date" class="form-control"
+                                        placeholder="Birth date">
+                                </div>
+                                <div class="form-group col-md-6">
+                                
+                                     <input type="text" class="form-control" placeholder="Parent name">
+                                </div>
+                                <div class="form-group time_icon col-md-6">
+                                   
+                                        <input type="number" class="form-control" placeholder="weight">
+                                 
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="number" class="form-control" placeholder="Phone no">
+                                 
+                                </div>
+                            </div>
+                            <div class="regerv_btn">
+                                <a href="#" class="regerv_btn_iner">Register</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="{{ url_for('static', filename = 'img/reservation.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    <!--::doctor_part start::-->
+    
+    <!-- footer part start-->
+    {%endblock%}

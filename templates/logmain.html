@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MyProfile</title>
+
+    <!-- favicon -->
+    <link href="{{url_for('static', filename='img1/favicon.png')}}" rel=icon>
+
+    <!-- web-fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link href="{{url_for('static', filename='css1/font-awesome.min.css')}}" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="{{url_for('static', filename='css1/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- owl carousal -->
+    <link href="{{url_for('static', filename='css1/owl.carousel.css')}}" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link href="{{url_for('static', filename='css1/style.css')}}" rel="stylesheet">
+
+    
+</head>
+<body>
+<div id="main-wrapper">
+<!-- Page Preloader -->
+<div id="preloader">
+    <div id="status">
+        <div class="status-mes"></div>
+    </div>
+</div>
+
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="profile-img">
+                    <img src="{{url_for('static', filename='img1/img-profile.jpg')}}" class="img-responsive" alt=""/>
+                </div>
+                <!-- Profile Image -->
+            </div>
+            <div class="col-md-9">
+                <div class="name-wrapper">
+                    <h1 class="name">{{ cname }}</h1>
+                    <span></span>
+                </div>
+              
+              
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="personal-details">
+                            <strong>August 08, 2019</strong>
+                            <small>BIRTH</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="personal-details">
+                            <strong>INDIA</strong>
+                            <small>NATIONALITY</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="personal-details">
+                            <strong>HINDI </strong>
+                            <small>LANGUAGE</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<!-- .header-->
+
+
+
+<section class="work-history-wrapper section-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="section-title">
+                    <h2>Vaccination History</h2>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="item-stats">
+                            <div class="item-stats-value">10</div>
+                            <div class="item-stats-name">Time Visited</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="item-stats">
+                            <div class="item-stats-value">12</div>
+                            <div class="item-stats-name">Vaccines</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="item-stats">
+                            <div class="item-stats-value">7</div>
+                            <div class="item-stats-name">Checkups Pending</div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- .work-history-wrapper -->
+
+
+<section class="section-wrapper skills-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="/cvac"><button class="btn btn-primary">Add</button></a>
+          
+                <div class="section-title">
+                    <h2>Progress Report</h2>
+                </div>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>V.id</th>
+                      <th>V.name</th>
+                      <th>age</th>
+                      <th>Dose</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for post in posts %}
+                    <tr>
+                      <td>{{ post.vid }}</td>
+                      <td>{{ post.vname }}</td>
+                      <td>{{ post.age }}</td>
+                      <td>{{ post.dose }}</td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <a href="/logout"><button class="btn btn-primary">Logout</button></a>
+    </div>
+    <!-- .container-fluid -->
+</section>
+<!-- .skills-wrapper -->
+
+<section class="section-contact section-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3">
+                        <address>
+                            <strong>Address</strong><br>
+                           Chitkara University.
+                        </address>
+                    </div>
+                    <div class="col-md-3">
+                        <address>
+                            <strong>Phone Number</strong><br>
+                            +91 987654328
+                        </address>
+                    </div>
+                    <div class="col-md-3">
+                        <address>
+                            <strong>Mobile Number</strong><br>
+                            987 654 321
+                        </address>
+                    </div>
+                    <div class="col-md-3">
+                        <address>
+                            <strong>Email</strong><br>
+                            <a href="mailto:#">mayank@gmail.com</a>
+                        </address>
+                    </div>
+
+                </div>
+                <!--.row-->
+
+                <!-- .feedback-form -->
+
+            </div>
+        </div>
+        <!--.row-->
+
+    </div>
+    <!--.container-fluid-->
+</section>
+<!--.section-contact-->
+
+
+<!-- .footer -->
+
+</div>
+<!-- #main-wrapper -->
+
+<!-- jquery -->
+<script src="{{url_for('static', filename='js1/jquery-2.1.4.min.js')}}"></script>
+<!-- Bootstrap -->
+<script src="{{url_for('static', filename='js1/bootstrap.min.js')}}"></script>
+<!--owl carousal-->
+<script src="{{url_for('static', filename='js1/owl.carousel.min.js')}}"></script>
+<!--theme script-->
+<script src="{{url_for('static', filename='js1/scripts.js')}}"></script>
+</body>
+</html>
